@@ -145,8 +145,42 @@ const PHOTOGRAPHERS = {
       id: "jeju-4", number: "#4", name: "Indigo Bridge", instagram: "@indigo_bridge_snap",
       packages: [
         {
-          name: "Package",
-          subtitle: "Indigo Bridge (1-Hr Casual Snap)",
+          name: "Package A",
+          subtitle: "Indigo Bridge (1-Hr Couple, Proposal Snap)",
+          partners: {
+            photographer: { name: "Indigo Bridge", instagram: "@indigo_bridge_snap" },
+          },
+          inclusiveItems: [
+            "Photography Session",
+            { text: "Signature Drone Video", detail: "Under 30 sec / Portrait or landscape (randomly assigned) / Logo included / Weather permitting" },
+            "Interpreter (During the Shooting)",
+          ],
+          shootingTime: "1 Hour",
+          locations: "1 site",
+          originalPhotos: "500+",
+          retouched: 5,
+          retouchedDetail: "Customer Selected Photos\n(Detailed Retouched + Color Correction)",
+          priceSNS: 561,
+          priceNoSNS: 655,
+          outfitNote: "Up to 1 outfit. No outfit change available.",
+          notes: [
+            "Sunset time shooting is available.",
+            "Photography only. Hair, makeup, and outfits are not included and must be arranged separately.",
+            "Studio photography addition is available.",
+            "Drone video can be upgraded for pre-wedding ceremony video use.",
+            "Additional color correction is available.",
+            "Transportation is not included. Please rent your own vehicle for transportation to the shooting locations.",
+          ],
+          addons: [
+            { name: "Additional Detailed Retouched or Color Correction", price: 9, desc: "Per photo. No limit on number of cuts. Includes both detailed retouched and color correction. Longer processing time with more requested cuts." },
+            { name: "Additional 1-Hour + 1 Location", price: 182, desc: "Add 1 hour of shooting time and 1 additional location to your package." },
+            { name: "Express Retouching (Photos)", price: 9, desc: "Per photo. Min 1, max 20 photos. Completed within 15 days from selection date. Available after shoot completion." },
+            { name: "Express Retouching (Drone Video)", price: 46, desc: "Drone video editing completed and delivered 1-2 weeks before the ceremony. Available only for clients who upgraded to the pre-wedding drone video option. Available after shoot completion." },
+          ],
+        },
+        {
+          name: "Package B",
+          subtitle: "Indigo Bridge (1-Hr Friends, Family, Maternity, Solo Snap)",
           partners: {
             photographer: { name: "Indigo Bridge", instagram: "@indigo_bridge_snap" },
           },
@@ -170,7 +204,9 @@ const PHOTOGRAPHERS = {
           ],
           addons: [
             { name: "Additional Detailed Retouched or Color Correction", price: 9, desc: "Per photo. No limit on number of cuts. Includes both detailed retouched and color correction. Longer processing time with more requested cuts." },
-            { name: "Additional Shooting Time and Location", price: 98, desc: "Based on 30 mins per 1 location (max.). Can be added to package. Available upon booking." },
+            { name: "Additional 1-Hour + 1 Location", price: 182, desc: "Add 1 hour of shooting time and 1 additional location to your package." },
+            { name: "Express Retouching (Photos)", price: 9, desc: "Per photo. Min 1, max 20 photos. Completed within 15 days from selection date. Available after shoot completion." },
+            { name: "Express Retouching (Drone Video)", price: 46, desc: "Drone video editing completed and delivered 1-2 weeks before the ceremony. Available only for clients who upgraded to the pre-wedding drone video option. Available after shoot completion." },
           ],
         },
       ],
