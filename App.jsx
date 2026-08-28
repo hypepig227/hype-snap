@@ -7,19 +7,19 @@ const PHOTOGRAPHERS = {
       packages: [
         {
           name: "Package A",
-          subtitle: "Eui.me Snap (2-Hr Casual Snap)",
+          subtitle: "2-Hr Snap (Couple, Proposal, Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Eui.me Snap", instagram: "@eui.me" },
           },
           inclusiveItems: ["Photography Session"],
-          shootingTime: "2 Hours",
+          shootingTime: "2 hours",
           shootingNote: "ONLY available for morning sessions (Option 1: 9AM-11AM / Option 2: 10AM-12PM). Sunset shoot is NOT available.",
           locations: "2 sites",
           originalPhotos: "500+",
           retouched: 15,
           retouchedDetail: "Customer Selected Photos",
-          priceSNS: 390,
-          priceNoSNS: 485,
+          priceSNS: 405,
+          priceNoSNS: 500,
           notes: ["Interpreter is not included.", "Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
           addons: [
             { name: "Hair & Makeup for Couple", price: 280, desc: "OVE Makeup (Instagram: @ove.makeup) or K Salon (Instagram: @k__salon)" },
@@ -29,37 +29,6 @@ const PHOTOGRAPHERS = {
             { name: "Fresh Bouquet", price: 160, desc: "Hatt (Instagram: @hatt__flower)" },
           ],
         },
-        {
-          name: "Package B",
-          subtitle: "Eui.me Snap (4-Hr) & OVE",
-          partners: {
-            photographer: { name: "Eui.me Snap", instagram: "@eui.me" },
-            hmu: { name: "OVE", instagram: "@ove.makeup" },
-            suit: { name: "The Suit Homme", instagram: "@thesuit_rentalcenter" },
-          },
-          inclusiveItems: [
-            "Photography Session",
-            "Hair & Makeup for Couple",
-            "2 Dress (Shoes NOT included)",
-            "2 Suits (Shirt and Shoes NOT included)",
-            "Accessories (Veil, Earrings, Hair acc)",
-            "1 Fresh Flower Bouquet",
-            "Interpreter (On Shoot Day)",
-            "Private Van with Driver (On Shoot Day)",
-            "Stylist (On Shoot Day)",
-          ],
-          shootingTime: "4 Hours",
-          locations: "3 sites",
-          originalPhotos: "1,500+",
-          retouched: 30,
-          retouchedDetail: "Customer Selected Photos",
-          priceSNS: 2170,
-          priceNoSNS: 2260,
-          addons: [
-            { name: "Additional Retouched Photo", price: 8, desc: "Per photo. Maximum 10 photos available." },
-            { name: "Express Retouching Service", price: 85, desc: "10 retouched photos for invitation card. Service will be completed within 2 weeks from the photo selection date." },
-          ],
-        },
       ],
     },
     {
@@ -67,19 +36,19 @@ const PHOTOGRAPHERS = {
       packages: [
         {
           name: "Package",
-          subtitle: "Jeju Ohu (2-Hr Casual Snap)",
+          subtitle: "2-Hr Snap (Couple, Proposal, Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Jeju Ohu", instagram: "@jejuohu" },
           },
           inclusiveItems: ["Photography Session"],
-          shootingTime: "2 Hours",
+          shootingTime: "2 hours",
           shootingNote: "ONLY available for morning sessions (Option 1: 9AM-11AM / Option 2: 10AM-12PM). Sunset shoot is NOT available.",
           locations: "2 sites",
           originalPhotos: "500+",
           retouched: 15,
           retouchedDetail: "Customer Selected Photos",
-          priceSNS: 390,
-          priceNoSNS: 485,
+          priceSNS: 405,
+          priceNoSNS: 500,
           notes: ["Interpreter is not included.", "Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
           addons: [
             { name: "Hair & Makeup for Couple", price: 280, desc: "OVE Makeup (Instagram: @ove.makeup) or K Salon (Instagram: @k__salon)" },
@@ -96,7 +65,7 @@ const PHOTOGRAPHERS = {
       packages: [
         {
           name: "Package A",
-          subtitle: "Jeju and You Ura (2-Hr) - Including Interpreter",
+          subtitle: "2-Hr Snap (Couple, Proposal, Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Jeju and You (Director Ura)", instagram: "@jejuandyou_ura" },
           },
@@ -104,37 +73,15 @@ const PHOTOGRAPHERS = {
             "Photography Session",
             "Interpreter (During the Shooting)",
           ],
-          shootingTime: "2-2.5 Hours",
+          shootingTime: "2-2.5 hours",
           shootingNote: "ONLY available at 10AM morning sessions. Sunset shoot is NOT available.",
           locations: "2 sites",
           originalPhotos: "500+",
           retouched: 20,
           retouchedDetail: "Detailed Retouched: 10 (Customer Selected)\nColor Correction: 10 (Customer Selected)",
-          priceSNS: 770,
-          priceNoSNS: 910,
+          priceSNS: 795,
+          priceNoSNS: 940,
           notes: ["Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations.", "The 2-hour photography package is suited for personal outfit photoshoots. Dress and suit rental is not included in this package (available as an add-on)."],
-          addons: [
-            { name: "Hair & Makeup for Couple", price: 257, desc: "Dansum (Instagram: @dansum_makeup)" },
-          ],
-        },
-        {
-          name: "Package B",
-          subtitle: "Jeju and You Ura (2-Hr) - Without Interpreter",
-          partners: {
-            photographer: { name: "Jeju and You (Director Ura)", instagram: "@jejuandyou_ura" },
-          },
-          inclusiveItems: [
-            "Photography Session",
-          ],
-          shootingTime: "2-2.5 Hours",
-          shootingNote: "ONLY available at 10AM morning sessions. Sunset shoot is NOT available.",
-          locations: "2 sites",
-          originalPhotos: "500+",
-          retouched: 20,
-          retouchedDetail: "Detailed Retouched: 10 (Customer Selected)\nColor Correction: 10 (Customer Selected)",
-          priceSNS: 580,
-          priceNoSNS: 720,
-          notes: ["This package is available only for clients who can communicate in Korean, as no interpreter is provided.", "Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations.", "The 2-hour photography package is suited for personal outfit photoshoots. Dress and suit rental is not included in this package (available as an add-on)."],
           addons: [
             { name: "Hair & Makeup for Couple", price: 257, desc: "Dansum (Instagram: @dansum_makeup)" },
           ],
@@ -146,65 +93,68 @@ const PHOTOGRAPHERS = {
       packages: [
         {
           name: "Package A",
-          subtitle: "Indigo Bridge (1-Hr Couple, Proposal Snap)",
+          subtitle: "1-Hr Snap (Couple, Proposal)",
           partners: {
             photographer: { name: "Indigo Bridge", instagram: "@indigo_bridge_snap" },
           },
           inclusiveItems: [
             "Photography Session",
-            { text: "Signature Drone Video", detail: "Under 30 sec / Portrait or landscape (randomly assigned) / Logo included / Weather permitting" },
+            { text: "Signature Drone Video", detail: "Under 30 sec / Portrait or landscape (randomly assigned) / BGM selected by photographer / Logo included" },
             "Interpreter (During the Shooting)",
           ],
-          shootingTime: "1 Hour",
+          shootingTime: "1 hour",
           locations: "1 site",
           originalPhotos: "500+",
-          retouched: 5,
+          retouched: 10,
           retouchedDetail: "Customer Selected Photos\n(Detailed Retouched + Color Correction)",
-          priceSNS: 561,
-          priceNoSNS: 655,
+          priceSNS: 600,
+          priceNoSNS: 695,
           outfitNote: "Up to 1 outfit. No outfit change available.",
           notes: [
-            "Sunset time shooting is available.",
+            "ONLY available for morning sessions. Sunset shooting is NOT available.",
             "Photography only. Hair, makeup, and outfits are not included and must be arranged separately.",
             "Studio photography addition is available.",
             "Drone video can be upgraded for pre-wedding ceremony video use.",
             "Additional color correction is available.",
             "Transportation is not included. Please rent your own vehicle for transportation to the shooting locations.",
+            "Drone filming is subject to weather conditions and may not be available in case of rain or strong winds.",
           ],
           addons: [
             { name: "Additional Detailed Retouched or Color Correction", price: 9, desc: "Per photo. No limit on number of cuts. Includes both detailed retouched and color correction. Longer processing time with more requested cuts." },
-            { name: "Additional 1-Hour + 1 Location", price: 182, desc: "Add 1 hour of shooting time and 1 additional location to your package." },
+            { name: "Additional 1-hour + 1 Location", price: 182, desc: "Add 1 hour of shooting time and 1 additional location to your package." },
             { name: "Express Retouching (Photos)", price: 9, desc: "Per photo. Min 1, max 20 photos. Completed within 15 days from selection date. Available after shoot completion." },
             { name: "Express Retouching (Drone Video)", price: 46, desc: "Drone video editing completed and delivered 1-2 weeks before the ceremony. Available only for clients who upgraded to the pre-wedding drone video option. Available after shoot completion." },
           ],
         },
         {
           name: "Package B",
-          subtitle: "Indigo Bridge (1-Hr Friends, Family, Maternity, Solo Snap)",
+          subtitle: "1-Hr Snap (Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Indigo Bridge", instagram: "@indigo_bridge_snap" },
           },
           inclusiveItems: [
             "Photography Session",
-            { text: "4K Cinematic Drone Shooting", detail: "20-30 sec video / Portrait or landscape (randomly assigned) / Logo included / Weather permitting / Raw video footage is NOT provided" },
+            { text: "Signature Drone Video", detail: "Under 30 sec / Portrait or landscape (randomly assigned) / BGM selected by photographer / Logo included" },
             "Interpreter (During the Shooting)",
-            "*Note: Up to 4 people (base). Up to 2 outfits / 1 outfit change.",
+            "Note: Up to 4 people (base). Up to 2 outfits / 1 outfit change.",
           ],
           shootingTime: "40-60 Min",
           locations: "1 site",
           originalPhotos: "500+",
           retouched: 10,
           retouchedDetail: "Customer Selected Photos\n(Detailed Retouched + Color Correction)",
-          priceSNS: 490,
-          priceNoSNS: 580,
+          priceSNS: 500,
+          priceNoSNS: 600,
           notes: [
+            "ONLY available for morning sessions. Sunset shooting is NOT available.",
             "Options subject to availability. Actual shooting conditions may vary.",
             "Transportation is not included. Please rent your own vehicle for transportation to the shooting locations.",
             "The casual photography package is suited for personal outfits photoshoot. Dress and suit rental is not included in this package (add-ons service).",
+            "Drone filming is subject to weather conditions and may not be available in case of rain or strong winds.",
           ],
           addons: [
             { name: "Additional Detailed Retouched or Color Correction", price: 9, desc: "Per photo. No limit on number of cuts. Includes both detailed retouched and color correction. Longer processing time with more requested cuts." },
-            { name: "Additional 1-Hour + 1 Location", price: 182, desc: "Add 1 hour of shooting time and 1 additional location to your package." },
+            { name: "Additional 1-hour + 1 Location", price: 182, desc: "Add 1 hour of shooting time and 1 additional location to your package." },
             { name: "Express Retouching (Photos)", price: 9, desc: "Per photo. Min 1, max 20 photos. Completed within 15 days from selection date. Available after shoot completion." },
             { name: "Express Retouching (Drone Video)", price: 46, desc: "Drone video editing completed and delivered 1-2 weeks before the ceremony. Available only for clients who upgraded to the pre-wedding drone video option. Available after shoot completion." },
           ],
@@ -218,17 +168,17 @@ const PHOTOGRAPHERS = {
       packages: [
         {
           name: "Package A",
-          subtitle: "Eo.ways (2-Hr Casual Snap)",
+          subtitle: "2-Hr Snap (Couple, Proposal, Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Eo.ways", instagram: "@eo.ways" },
           },
           inclusiveItems: ["Photography Session"],
-          shootingTime: "2 Hours",
+          shootingTime: "2 hours",
           locations: "1 site",
           originalPhotos: "100+",
           retouched: 15,
           retouchedDetail: "Customer Selected Photos",
-          priceSNS: 250,
+          priceSNS: 260,
           priceNoSNS: null,
           outfitNote: "For a 2-hour photoshoot, up to 1 outfit is available.",
           notes: ["Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
@@ -238,48 +188,21 @@ const PHOTOGRAPHERS = {
         },
         {
           name: "Package B",
-          subtitle: "Eo.ways (3-Hr Casual Snap)",
+          subtitle: "3-Hr Snap (Couple, Proposal, Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Eo.ways", instagram: "@eo.ways" },
           },
           inclusiveItems: ["Photography Session"],
-          shootingTime: "3 Hours",
+          shootingTime: "3 hours",
           locations: "2 sites",
           originalPhotos: "200+",
           retouched: 30,
           retouchedDetail: "Customer Selected Photos",
-          priceSNS: 345,
+          priceSNS: 355,
           priceNoSNS: null,
           addons: [
             { name: "Hair & Makeup for Couple", price: 210, desc: "K Salon (Instagram: @k__salon)" },
           ],
-        },
-        {
-          name: "Package C",
-          subtitle: "Eo.ways (4-5Hr) & K Salon",
-          partners: {
-            photographer: { name: "Eo.ways", instagram: "@eo.ways" },
-            hmu: { name: "K Salon", instagram: "@k__salon" },
-          },
-          inclusiveItems: [
-            "Photography Session",
-            "Hair & Makeup for Couple",
-            "2 Dress (Shoes NOT included)",
-            "2 Suits (Shirt and Shoes NOT included)",
-            "Accessories (Veil, Earrings, Hair acc)",
-            "1 Fresh Flower Bouquet",
-            "Stylist (On Shoot Day)",
-            "Interpreter (On Shoot Day)",
-            "Private Van with Driver (On Shoot Day)",
-          ],
-          shootingTime: "4-5 Hours",
-          locations: "3 sites",
-          originalPhotos: "1,000+",
-          retouched: 40,
-          retouchedDetail: "Customer Selected Photos",
-          priceSNS: 2412,
-          priceNoSNS: null,
-          addons: [],
         },
       ],
     },
@@ -288,7 +211,7 @@ const PHOTOGRAPHERS = {
       packages: [
         {
           name: "Package",
-          subtitle: "Kiss and Smoking - Simple Day (2-Hr)",
+          subtitle: "2-Hr Snap (Couple, Proposal, Friends, Family, Maternity, Solo)",
           partners: {
             photographer: { name: "Kiss and Smoking", instagram: "@kiss_and.smoking" },
           },
@@ -296,12 +219,12 @@ const PHOTOGRAPHERS = {
             "Photography Session",
             "Interpreter (2 hours, during the shoot)",
           ],
-          shootingTime: "2 Hours",
+          shootingTime: "2 hours",
           locations: "1 site",
           originalPhotos: "300+",
           retouched: 10,
           retouchedDetail: "Customer Selected Photos",
-          priceSNS: 400,
+          priceSNS: 515,
           priceNoSNS: null,
           outfitNote: "For a 2-hour photoshoot, up to 1 outfit is available.",
           notes: ["Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
@@ -356,11 +279,11 @@ function BackButton({ onClick, label }) {
         color: "#3B9B8F",
         cursor: "pointer",
         fontSize: "14px",
-        padding: "8px 0",
+        padding: "4px 0",
         display: "flex",
         alignItems: "center",
         gap: "6px",
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "'Pretendard', -apple-system, sans-serif",
       }}
     >
       <span style={{ fontSize: "18px" }}>&#8249;</span> {label}
@@ -437,7 +360,7 @@ function RegionSelect({ onSelect }) {
               e.currentTarget.style.boxShadow = "none";
             }}
           >
-            <div style={{ fontSize: "24px", fontWeight: 300, color: "#1E3A3A", fontFamily: "'Cormorant Garamond', serif" }}>{r.label}</div>
+            <div style={{ fontSize: "24px", fontWeight: 300, color: "#1E3A3A", fontFamily: "'Pretendard', -apple-system, sans-serif" }}>{r.label}</div>
             <div style={{ fontSize: "12px", color: "#666", marginTop: "8px", letterSpacing: "1px" }}>{r.sub}</div>
           </button>
         ))}
@@ -449,8 +372,8 @@ function RegionSelect({ onSelect }) {
 function PhotographerList({ region, photographers, onSelect, onBack }) {
   return (
     <div>
-      <BackButton onClick={onBack} label="Location" />
-      <p style={{ color: "#666", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", margin: "24px 0 16px", textAlign: "center" }}>
+      <BackButton onClick={onBack} label="Back" />
+      <p style={{ color: "#666", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", margin: "12px 0 16px", textAlign: "center" }}>
         {region === "jeju" ? "Jeju" : "Seoul"} Photographers
       </p>
       <div style={{ display: "flex", flexDirection: "column", gap: "8px", maxWidth: "480px", margin: "0 auto" }}>
@@ -464,7 +387,7 @@ function PhotographerList({ region, photographers, onSelect, onBack }) {
               left={
                 <>
                   <span style={{ color: "#3B9B8F", fontSize: "12px", fontWeight: 600 }}>{p.number}</span>
-                  <span style={{ color: "#1E3A3A", fontSize: "16px", marginLeft: "12px", fontFamily: "'Cormorant Garamond', serif", fontWeight: 500 }}>
+                  <span style={{ color: "#1E3A3A", fontSize: "16px", marginLeft: "12px", fontFamily: "'Pretendard', -apple-system, sans-serif", fontWeight: 500 }}>
                     {p.name}
                   </span>
                 </>
@@ -493,15 +416,12 @@ function PackageDetail({ photographer, onBack }) {
 
   return (
     <div>
-      <BackButton onClick={onBack} label="Photographers" />
+      <BackButton onClick={onBack} label="Back" />
 
-      <div style={{ textAlign: "center", margin: "24px 0 32px" }}>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400, fontSize: "28px", color: "#1E3A3A", margin: 0 }}>
+      <div style={{ textAlign: "center", margin: "12px 0 16px" }}>
+        <h2 style={{ fontFamily: "'Pretendard', -apple-system, sans-serif", fontWeight: 400, fontSize: "22px", color: "#1E3A3A", margin: 0 }}>
           {photographer.name}
         </h2>
-        <p style={{ margin: "4px 0 0", fontSize: "13px" }}>
-          <InstagramLink handle={photographer.instagram} />
-        </p>
       </div>
 
       {/* Package tabs */}
@@ -531,8 +451,15 @@ function PackageDetail({ photographer, onBack }) {
       )}
 
       {/* Package subtitle */}
-      <div style={{ textAlign: "center", marginBottom: "32px" }}>
-        <p style={{ fontSize: "14px", color: "#3B9B8F", fontWeight: 500, margin: 0, letterSpacing: "0.5px" }}>{pkg.subtitle}</p>
+      <div style={{ textAlign: "center", marginBottom: "24px" }}>
+        <p style={{ fontSize: "14px", color: "#3B9B8F", fontWeight: 500, margin: 0, letterSpacing: "0.5px" }}>
+          {pkg.subtitle.includes("(") ? pkg.subtitle.split("(")[0].trim() : pkg.subtitle}
+        </p>
+        {pkg.subtitle.includes("(") && (
+          <p style={{ fontSize: "12px", color: "#999", fontWeight: 400, margin: "4px 0 0", letterSpacing: "0.3px" }}>
+            ({pkg.subtitle.split("(")[1]}
+          </p>
+        )}
       </div>
 
       {/* Partners */}
@@ -557,7 +484,7 @@ function PackageDetail({ photographer, onBack }) {
         <div style={{ marginBottom: "24px" }}>
           <p style={{ fontSize: "12px", color: "#666", letterSpacing: "2px", textTransform: "uppercase", margin: "0 0 12px" }}>Package Inclusive</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "6px" }}>
-            {pkg.inclusiveItems.filter(item => typeof item === "string" ? !item.startsWith("*Note:") : true).map((item, idx) => (
+            {pkg.inclusiveItems.filter(item => typeof item === "string" ? !item.startsWith("Note:") : true).map((item, idx) => (
               <div key={typeof item === "string" ? item : item.text} style={{ fontSize: "14px", color: "#1E3A3A", padding: "6px 0", display: "flex", alignItems: "flex-start", gap: "8px" }}>
                 <span style={{ color: "#3B9B8F", flexShrink: 0 }}>✓</span>
                 <div>
@@ -571,7 +498,7 @@ function PackageDetail({ photographer, onBack }) {
               </div>
             ))}
           </div>
-          {pkg.inclusiveItems.filter(item => typeof item === "string" && item.startsWith("*Note:")).map((note) => (
+          {pkg.inclusiveItems.filter(item => typeof item === "string" && item.startsWith("Note:")).map((note) => (
             <p key={note} style={{ fontSize: "12px", color: "#999", fontStyle: "italic", margin: "12px 0 0", padding: "8px 12px", borderLeft: "2px solid #D0E6E2" }}>
               {note}
             </p>
@@ -580,9 +507,9 @@ function PackageDetail({ photographer, onBack }) {
       )}
 
       {/* Photography Details */}
-      <div style={{ background: "#F5FAF9", border: "1px solid #D0E6E2", borderRadius: "8px", padding: "20px 24px", marginBottom: "24px" }}>
-        <p style={{ fontSize: "12px", color: "#666", letterSpacing: "2px", textTransform: "uppercase", margin: "0 0 16px" }}>Photography Details</p>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px 24px" }}>
+      <div style={{ background: "#F5FAF9", border: "1px solid #D0E6E2", borderRadius: "8px", padding: "16px 20px", marginBottom: "24px" }}>
+        <p style={{ fontSize: "12px", color: "#666", letterSpacing: "2px", textTransform: "uppercase", margin: "0 0 12px" }}>Photography Details</p>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px 24px" }}>
           {[
             { label: "Shooting Time", value: pkg.shootingTime },
             { label: "Locations", value: pkg.locations },
@@ -590,23 +517,23 @@ function PackageDetail({ photographer, onBack }) {
           ].map((d) => (
             <div key={d.label}>
               <div style={{ fontSize: "12px", color: "#666" }}>{d.label}</div>
-              <div style={{ fontSize: "18px", fontWeight: 400, color: "#1E3A3A", marginTop: "2px", fontFamily: "'Cormorant Garamond', serif" }}>{d.value}</div>
+              <div style={{ fontSize: "16px", fontWeight: 400, color: "#1E3A3A", marginTop: "2px", fontFamily: "'Pretendard', -apple-system, sans-serif" }}>{d.value}</div>
             </div>
           ))}
           <div>
             <div style={{ fontSize: "12px", color: "#666" }}>Retouched Photos</div>
-            <div style={{ fontSize: "18px", fontWeight: 400, color: "#1E3A3A", marginTop: "2px", fontFamily: "'Cormorant Garamond', serif" }}>{pkg.retouched} photos</div>
+            <div style={{ fontSize: "16px", fontWeight: 400, color: "#1E3A3A", marginTop: "2px", fontFamily: "'Pretendard', -apple-system, sans-serif" }}>{pkg.retouched} photos</div>
             <div style={{ fontSize: "12px", color: "#888", marginTop: "4px", lineHeight: "1.5", whiteSpace: "pre-line" }}>{pkg.retouchedDetail}</div>
           </div>
         </div>
         {pkg.shootingNote && (
           <p style={{ fontSize: "12px", color: "#999", fontStyle: "italic", margin: "16px 0 0", padding: "8px 12px", borderLeft: "2px solid #D0E6E2" }}>
-            *Note: {pkg.shootingNote}
+            Note: {pkg.shootingNote}
           </p>
         )}
         {pkg.outfitNote && (
           <p style={{ fontSize: "12px", color: "#999", fontStyle: "italic", margin: "8px 0 0", padding: "8px 12px", borderLeft: "2px solid #D0E6E2" }}>
-            *Note: {pkg.outfitNote}
+            Note: {pkg.outfitNote}
           </p>
         )}
       </div>
@@ -615,14 +542,16 @@ function PackageDetail({ photographer, onBack }) {
       {pkg.priceNoSNS !== null ? (
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "24px" }}>
           <div style={{ background: "#1E3A3A", borderRadius: "8px", padding: "16px", textAlign: "center" }}>
-            <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.75)", letterSpacing: "1px", textTransform: "uppercase" }}>Agree to SNS Upload</div>
-            <div style={{ fontSize: "22px", fontWeight: 400, color: "#fff", marginTop: "6px", fontFamily: "'Cormorant Garamond', serif" }}>
+            <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.9)", letterSpacing: "1px", textTransform: "uppercase", fontWeight: 500 }}>Discounted Price</div>
+            <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.7)", marginTop: "3px", letterSpacing: "0.5px" }}>(With SNS Upload Consent)</div>
+            <div style={{ fontSize: "16px", fontWeight: 400, color: "#fff", marginTop: "6px", fontFamily: "'Pretendard', -apple-system, sans-serif" }}>
               USD {pkg.priceSNS.toLocaleString()}
             </div>
           </div>
           <div style={{ background: "#F5FAF9", border: "1px solid #D0E6E2", borderRadius: "8px", padding: "16px", textAlign: "center" }}>
-            <div style={{ fontSize: "12px", color: "#666", letterSpacing: "1px", textTransform: "uppercase" }}>Decline SNS Upload</div>
-            <div style={{ fontSize: "22px", fontWeight: 400, color: "#1E3A3A", marginTop: "6px", fontFamily: "'Cormorant Garamond', serif" }}>
+            <div style={{ fontSize: "12px", color: "#555", letterSpacing: "1px", textTransform: "uppercase", fontWeight: 500 }}>Regular Price</div>
+            <div style={{ fontSize: "11px", color: "#888", marginTop: "3px", letterSpacing: "0.5px" }}>(No SNS Upload Consent)</div>
+            <div style={{ fontSize: "16px", fontWeight: 400, color: "#1E3A3A", marginTop: "6px", fontFamily: "'Pretendard', -apple-system, sans-serif" }}>
               USD {pkg.priceNoSNS.toLocaleString()}
             </div>
           </div>
@@ -630,7 +559,7 @@ function PackageDetail({ photographer, onBack }) {
       ) : (
         <div style={{ background: "#1E3A3A", borderRadius: "8px", padding: "16px", textAlign: "center", marginBottom: "24px" }}>
           <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.75)", letterSpacing: "1px", textTransform: "uppercase" }}>Package Price</div>
-          <div style={{ fontSize: "22px", fontWeight: 400, color: "#fff", marginTop: "6px", fontFamily: "'Cormorant Garamond', serif" }}>
+          <div style={{ fontSize: "16px", fontWeight: 400, color: "#fff", marginTop: "6px", fontFamily: "'Pretendard', -apple-system, sans-serif" }}>
             USD {pkg.priceSNS.toLocaleString()}
           </div>
         </div>
@@ -737,7 +666,7 @@ export default function App() {
 
   return (
     <div style={{
-      fontFamily: "'Inter', -apple-system, sans-serif",
+      fontFamily: "'Pretendard', -apple-system, sans-serif",
       maxWidth: "640px",
       margin: "0 auto",
       padding: "24px 20px",
@@ -748,7 +677,7 @@ export default function App() {
       {/* Header */}
       <div style={{ textAlign: "center", marginBottom: "16px" }}>
         <h1 style={{
-          fontFamily: "'Cormorant Garamond', serif",
+          fontFamily: "'Pretendard', -apple-system, sans-serif",
           fontSize: "20px",
           fontWeight: 300,
           letterSpacing: "4px",
