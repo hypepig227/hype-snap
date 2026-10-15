@@ -76,7 +76,7 @@ const PHOTOGRAPHERS = {
             "Interpreter (During the Shooting)",
           ],
           shootingTime: "2-2.5 hours",
-          shootingNote: "ONLY available at 10AM morning sessions. Sunset shoot is NOT available.",
+          shootingNote: "Only available for morning sessions. Sunset shoot is NOT available.",
           locations: "2 sites",
           originalPhotos: "500+",
           retouched: 20,
@@ -106,6 +106,7 @@ const PHOTOGRAPHERS = {
             "Interpreter (During the Shooting)",
           ],
           shootingTime: "1 hour",
+          shootingNote: "Only available for morning sessions. Sunset shoot is NOT available.",
           locations: "1 site",
           originalPhotos: "500+",
           retouched: 10,
@@ -114,7 +115,6 @@ const PHOTOGRAPHERS = {
           priceNoSNS: 660,
           outfitNote: "Up to 1 outfit. No outfit change available.",
           notes: [
-            "ONLY available for morning sessions. Sunset shooting is NOT available.",
             "Photography only. Hair, makeup, and outfits are not included and must be arranged separately.",
             "Studio photography addition is available.",
             "Drone video can be upgraded for pre-wedding ceremony video use.",
@@ -142,7 +142,8 @@ const PHOTOGRAPHERS = {
             "Interpreter (During the Shooting)",
             "Note: Up to 4 people (base). Up to 2 outfits / 1 outfit change.",
           ],
-          shootingTime: "40-60 Min",
+          shootingTime: "1 hour",
+          shootingNote: "Only available for morning sessions. Sunset shoot is NOT available.",
           locations: "1 site",
           originalPhotos: "500+",
           retouched: 10,
@@ -150,7 +151,6 @@ const PHOTOGRAPHERS = {
           priceSNS: 470,
           priceNoSNS: 565,
           notes: [
-            "ONLY available for morning sessions. Sunset shooting is NOT available.",
             "Options subject to availability. Actual shooting conditions may vary.",
             "Transportation is not included. Please rent your own vehicle for transportation to the shooting locations.",
             "The casual photography package is suited for personal outfits photoshoot. Dress and suit rental is not included in this package (add-ons service).",
@@ -176,14 +176,14 @@ const PHOTOGRAPHERS = {
             photographer: { name: "Youin Jeju", instagram: "@youinsnap" },
           },
           inclusiveItems: ["Photography Session"],
-          shootingTime: "2 hours shooting in the morning time",
-          locations: "2 locations outside",
+          shootingTime: "2 hours",
+          locations: "2 sites",
           originalPhotos: "1,000+",
           retouched: 10,
           retouchedDetail: "",
           priceSNS: 565,
           priceNoSNS: null,
-          notes: [],
+          notes: ["Only available for morning sessions.", "Interpreter is not included.", "Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
           addons: [
             { name: "1 Additional Hour", price: 170, desc: "Add 1 hour of shooting time to your package." },
             { name: "Camcorder Videography", price: 255, desc: "2 to 3 minutes of video footage taken by camcorder." },
@@ -677,7 +677,7 @@ function PackageDetail({ photographer, onBack }) {
           </div>
         </div>
       )}
-      <p style={{ fontSize: "12px", color: "#666", margin: "-12px 0 8px 4px" }}>
+      <p style={{ fontSize: "12px", color: "#666", margin: pkg.priceNoSNS !== null ? "-12px 0 8px 4px" : "-12px 0 24px 4px" }}>
         * Final price is subject to change based on current USD exchange rate and does NOT include add-ons.
       </p>
       {pkg.priceNoSNS !== null && (
