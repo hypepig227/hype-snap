@@ -21,7 +21,7 @@ const PHOTOGRAPHERS = {
           priceNoSNS: 530,
           notes: ["Interpreter is not included.", "Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
           addons: [
-            { name: "Hair & Makeup for Couple", price: 280, desc: "OVE Makeup (Instagram: @ove.makeup) or K Salon (Instagram: @k__salon)" },
+            { name: "Hair & Makeup for Couple", price: 230, desc: "OVE Makeup (Instagram: @ove.makeup) or K Salon (Instagram: @k__salon)" },
             { name: "Videography", price: 185, desc: "Highlight video (approx. 1 minute). Complimentary drone footage clip (approx. 15 seconds). *Please note drone filming may not be available in case of rain or strong winds." },
             { name: "Additional Retouched Photo", price: 8, desc: "Per photo. Maximum 10 photos available." },
             { name: "Express Retouching Service", price: 85, desc: "10 retouched photos for invitation card. Service will be completed within 2 weeks from the photo selection date." },
@@ -50,7 +50,7 @@ const PHOTOGRAPHERS = {
           priceNoSNS: 530,
           notes: ["Interpreter is not included.", "Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
           addons: [
-            { name: "Hair & Makeup for Couple", price: 280, desc: "OVE Makeup (Instagram: @ove.makeup) or K Salon (Instagram: @k__salon)" },
+            { name: "Hair & Makeup for Couple", price: 230, desc: "OVE Makeup (Instagram: @ove.makeup) or K Salon (Instagram: @k__salon)" },
             { name: "Videography", price: 185, desc: "Highlight video (approx. 1 minute). Complimentary drone footage clip (approx. 15 seconds). *Please note drone filming may not be available in case of rain or strong winds." },
             { name: "Additional Retouched Photo", price: 8, desc: "Per photo. Maximum 10 photos available." },
             { name: "Express Retouching Service", price: 85, desc: "10 retouched photos for invitation card. Service will be completed within 2 weeks from the photo selection date." },
@@ -83,7 +83,7 @@ const PHOTOGRAPHERS = {
           priceNoSNS: 840,
           notes: ["Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations.", "The 2-hour photography package is suited for personal outfit photoshoots. Dress and suit rental is not included in this package (available as an add-on)."],
           addons: [
-            { name: "Hair & Makeup for Couple", price: 257, desc: "Dansum (Instagram: @dansum_makeup)" },
+            { name: "Hair & Makeup for Couple", price: 230, desc: "Dansum (Instagram: @dansum_makeup)" },
             { name: "Studio Rental (Per Hour, Approx.)", price: 100, desc: "Approximately USD 100 per hour. The final rate varies by studio and will be confirmed after the studio is selected." },
           ],
         },
@@ -266,7 +266,7 @@ const PHOTOGRAPHERS = {
           outfitNote: "For a 2-hour photoshoot, up to 1 outfit is available.",
           notes: ["Transportation is not included. Please arrange your own transportation, such as a rental car or taxi, to the shooting locations."],
           addons: [
-            { name: "Hair & Makeup for Couple", price: 210, desc: "K Salon (Instagram: @k__salon)" },
+            { name: "Hair & Makeup for Couple", price: 230, desc: "K Salon (Instagram: @k__salon)" },
             { name: "Interpreter (Per Hour)", price: 50, desc: "Interpreter support during the shoot, charged per hour. For complex shoots, additional interpreter time may be required at the photographer's request." },
             { name: "Studio Rental (Per Hour, Approx.)", price: 100, desc: "Approximately USD 100 per hour. The final rate varies by studio and will be confirmed after the studio is selected." },
           ],
@@ -286,7 +286,7 @@ const PHOTOGRAPHERS = {
           priceSNS: 385,
           priceNoSNS: null,
           addons: [
-            { name: "Hair & Makeup for Couple", price: 210, desc: "K Salon (Instagram: @k__salon)" },
+            { name: "Hair & Makeup for Couple", price: 230, desc: "K Salon (Instagram: @k__salon)" },
             { name: "Interpreter (Per Hour)", price: 50, desc: "Interpreter support during the shoot, charged per hour. For complex shoots, additional interpreter time may be required at the photographer's request." },
             { name: "Studio Rental (Per Hour, Approx.)", price: 100, desc: "Approximately USD 100 per hour. The final rate varies by studio and will be confirmed after the studio is selected." },
           ],
@@ -381,6 +381,7 @@ function RenderDesc({ text }) {
 }
 
 function BackButton({ onClick, label }) {
+  if (!onClick) return null;
   return (
     <button
       onClick={onClick}
@@ -497,7 +498,7 @@ function PhotographerList({ region, photographers, onSelect, onBack }) {
               disabled={!hasPackages}
               left={
                 <>
-                  <span style={{ color: "#3B9B8F", fontSize: "12px", fontWeight: 600 }}>{p.number}</span>
+                  <span style={{ color: "#3B9B8F", fontSize: "12px", fontWeight: 600 }}>{codeOf(p.id)}</span>
                   <span style={{ color: "#1E3A3A", fontSize: "16px", marginLeft: "12px", fontFamily: "'Pretendard', -apple-system, sans-serif", fontWeight: 500 }}>
                     {p.name}
                   </span>
@@ -530,28 +531,30 @@ function PackageDetail({ photographer, onBack }) {
       <BackButton onClick={onBack} label="Back" />
 
       <div style={{ textAlign: "center", margin: "12px 0 16px" }}>
-        <h2 style={{ fontFamily: "'Pretendard', -apple-system, sans-serif", fontWeight: 400, fontSize: "22px", color: "#1E3A3A", margin: 0 }}>
+        <CodeTag id={photographer.id} />
+        <h2 style={{ fontFamily: "'Pretendard', -apple-system, sans-serif", fontWeight: 400, fontSize: "17px", letterSpacing: "0.5px", color: "#1E3A3A", margin: 0 }}>
           {photographer.name}
         </h2>
       </div>
 
       {/* Package tabs */}
       {photographer.packages.length > 1 && (
-        <div style={{ display: "flex", gap: "8px", justifyContent: "center", flexWrap: "wrap", marginBottom: "32px" }}>
+        <div style={{ display: "flex", gap: "5px", justifyContent: "center", flexWrap: "wrap", marginBottom: "24px" }}>
           {photographer.packages.map((p, i) => (
             <button
               key={p.name}
               onClick={() => { setSelectedPkg(i); setExpandedAddon(null); }}
               style={{
-                padding: "10px 20px",
+                padding: "8px 8px",
+                whiteSpace: "nowrap",
                 background: i === selectedPkg ? "#1E3A3A" : "#fff",
                 color: i === selectedPkg ? "#fff" : "#1E3A3A",
                 border: "1px solid #1E3A3A",
                 borderRadius: "6px",
                 cursor: "pointer",
-                fontSize: "13px",
+                fontSize: "12px",
                 fontWeight: 500,
-                letterSpacing: "0.5px",
+                letterSpacing: "0.3px",
                 transition: "all 0.2s",
               }}
             >
@@ -771,9 +774,43 @@ function PackageDetail({ photographer, onBack }) {
   );
 }
 
+/* Direct link: ?p=jeju-1 shows only that photographer */
+function findLinkTarget() {
+  try {
+    const id = new URLSearchParams(window.location.search).get("p");
+    if (!id) return null;
+    for (const r of ["jeju", "seoul"]) {
+      for (const p of PHOTOGRAPHERS[r]) {
+        if (p.id === id) return { region: r, photographer: p };
+      }
+    }
+  } catch (e) {}
+  return null;
+}
+const LINK_TARGET = findLinkTarget();
+
+function codeOf(id) {
+  if (!id) return null;
+  const [r, n] = id.split("-");
+  return (r === "jeju" ? "Jeju" : "Seoul") + " " + String(n).padStart(2, "0");
+}
+
+function CodeTag({ id }) {
+  const c = codeOf(id);
+  if (!c) return null;
+  return (
+    <div style={{ marginBottom: "8px" }}>
+      <span style={{ display: "inline-block", padding: "3px 12px", border: "1px solid #3B9B8F", borderRadius: "999px", fontSize: "13px", letterSpacing: "1.5px", color: "#3B9B8F", fontWeight: 500 }}>
+        {c.toUpperCase()}
+      </span>
+    </div>
+  );
+}
+
 export default function App() {
-  const [region, setRegion] = useState(null);
-  const [photographer, setPhotographer] = useState(null);
+  const locked = LINK_TARGET !== null;
+  const [region, setRegion] = useState(locked ? LINK_TARGET.region : null);
+  const [photographer, setPhotographer] = useState(locked ? LINK_TARGET.photographer : null);
 
   return (
     <div style={{
@@ -820,7 +857,7 @@ export default function App() {
       {photographer && (
         <PackageDetail
           photographer={photographer}
-          onBack={() => setPhotographer(null)}
+          onBack={locked ? null : () => setPhotographer(null)}
         />
       )}
 
